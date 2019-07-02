@@ -95,6 +95,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -151,7 +152,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ApplicationBase.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="RyuDevice.cpp" />
     <ClCompile Include="RyuEngine.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ApplicationBase.h" />
+    <ClInclude Include="CoreMinimal.h" />
+    <ClInclude Include="RyuDevice.h" />
+    <ClInclude Include="RyuEngine.h" />
+    <ClInclude Include="RyuLib.h" />
+    <ClInclude Include="RyuLogger.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

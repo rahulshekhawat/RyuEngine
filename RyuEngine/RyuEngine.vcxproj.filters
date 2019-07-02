@@ -13,10 +13,60 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Engine">
+      <UniqueIdentifier>{6eaf30ba-d797-41b6-8a27-8fe20c278a2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine">
+      <UniqueIdentifier>{b4336c60-5f3d-42a5-8423-5f02ff20447b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Common">
+      <UniqueIdentifier>{b9a61d98-868b-47ba-ae74-a30baf65c42f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameApp">
+      <UniqueIdentifier>{cc4e8ebc-72c8-41a2-b895-07aca7e8ec2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameApp">
+      <UniqueIdentifier>{03448d60-e0e9-4790-a5f7-b0dca408fdc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DxLib">
+      <UniqueIdentifier>{53851697-3bb1-43c0-840c-faf053ed1314}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DxLib">
+      <UniqueIdentifier>{9e4cabd9-57b0-4a6e-a2c2-03711837beb0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="RyuEngine.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ApplicationBase.cpp">
+      <Filter>Source Files\GameApp</Filter>
+    </ClCompile>
+    <ClCompile Include="RyuDevice.cpp">
+      <Filter>Source Files\DxLib</Filter>
+    </ClCompile>
+    <ClCompile Include="RyuEngine.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RyuLogger.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="RyuLib.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreMinimal.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="ApplicationBase.h">
+      <Filter>Header Files\GameApp</Filter>
+    </ClInclude>
+    <ClInclude Include="RyuDevice.h">
+      <Filter>Header Files\DxLib</Filter>
+    </ClInclude>
+    <ClInclude Include="RyuEngine.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
