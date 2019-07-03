@@ -9,6 +9,9 @@
 #include <DirectXMath.h>
 #include <wrl.h>
 
+const int MIN_WINDOW_WIDTH = 1280;
+const int MIN_WINDOW_HEIGHT = 720;
+
 class RyuDevice
 {
 public:
@@ -21,15 +24,22 @@ public:
 	virtual bool CreateDevice();
 	virtual void DestroyDevice();
 
+protected:
+
+	bool bEnableMsaaa;
+
 private:
 
 	static RyuDevice* Get_Internal();
 
 private:
 
+	HWND MainWindow;
+
 	static int NumOfDevices;
 	Microsoft::WRL::ComPtr<ID3D11Device> D3D11Device;
 	Microsoft::WRL::ComPtr<ID3D11DeviceContext> D3D11Context;
+	Microsoft::WRL::ComPtr<IDXGISwapChain> D3D11SwapChain;
 
 
 };
